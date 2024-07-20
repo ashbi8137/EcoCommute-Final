@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecocommute - Green Travel Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Ecocommute</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#rewards">Rewards</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Welcome to Ecocommute</h1>
+            <p>Join us in making eco-friendly transportation choices for a greener future!</p>
+            
+            <div class="hero-image">
+                <img src="1.jpeg" alt="Ecocommute Hero Image">
+            </div>
+            <br>
+           
+            <div class="cta-buttons">
+                <button class="btn btn-primary">Sign Up</button>
+                <button class="btn btn-secondary">Log In</button>
+            </div>
+        </section>
+
+        <section id="features">
+            <h2>Why Choose Ecocommute?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-route"></i>
+                    <h3>Smart Trip Planning</h3>
+                    <p>Optimize your routes for eco-friendly travel options.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Reduce Carbon Footprint</h3>
+                    <p>Track and minimize your environmental impact.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-gift"></i>
+                    <h3>Earn Rewards</h3>
+                    <p>Get incentives for making sustainable choices.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Join a Community</h3>
+                    <p>Connect with eco-conscious commuters.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="dashboard">
+            <h2>Your Ecocommute Dashboard</h2>
+            <div class="dashboard-grid">
+                <div class="profile-card">
+                    <h3>Profile</h3>
+                    <div class="profile-info">
+                        <img src="2.png" alt="User Avatar" class="profile-avatar">
+                        <div>
+                            <p><b>Name: </b><span id="user-name">John Doe</span></p>
+                            <p><b>Total Eco-trips:</b> <span id="eco-trips">15</span></p>
+                            <p><b>Carbon Saved:</b> <span id="carbon-saved">75 kg</span></p>
+                        </div>
+                    </div>
+                    <div class="profile-stats">
+                        <div class="stat">
+                            <span class="stat-value"><b>5</b></span>
+                            <span class="stat-label">Badges</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value"><b>1500</b></span>
+                            <span class="stat-label">Points</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="trip-planner">
+                    <h3>Plan Your Trip</h3>
+                    <form id="trip-form">
+                        <input type="text" id="start-point" placeholder="Start Point" required>
+                        <input type="text" id="end-point" placeholder="End Point" required>
+                        <select id="travel-mode">
+                            <option value="bike">Bike</option>
+                            <option value="walk">Walk</option>
+                            <option value="bus">Bus</option>
+                            <option value="train">Train</option>
+                            <option value="car">Car (Carpool)</option>
+                        </select>
+                        <button type="submit" class="btn btn-primary">Plan Trip</button>
+                    </form>
+                </div>
+                <div id="map-container">
+                    <iframe src="https://storage.googleapis.com/maps-solutions-cwmd7xupin/commutes/9mcp/commutes.html"
+                        width="250%" height="100%"
+                        style="border:0;"
+                        loading="lazy">
+                    </iframe>
+                </div>
+                <div id="trip-suggestions"></div>
+            </div>
+        </section>
+
+        <section id="rewards">
+            <h2>Rewards Center</h2>
+            <div id="user-points">
+                <h3>Your Points: <span>1500</span></h3>
+            </div>
+            <div id="rewards-catalog" class="rewards-grid"></div>
+        </section>
+
+        <section id="community">
+            <h2>Community Forum</h2>
+            <div id="forum-posts"></div>
+            <form id="post-form">
+                <textarea id="post-content" placeholder="Share your eco-commute experience..."></textarea>
+                <button type="submit" class="btn btn-primary">Post</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ecocommute. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
