@@ -95,8 +95,8 @@
                 <div class="trip-planner">
                     <h3>Plan Your Trip</h3>
                     <form id="trip-form">
-                        <input type="text" id="start-point" placeholder="Start Point" required>
-                        <input type="text" id="end-point" placeholder="End Point" required>
+                        <input type="text" id="start-point" placeholder="Start Point" required="">
+                        <input type="text" id="end-point" placeholder="End Point" required="">
                         <select id="travel-mode">
                             <option value="bike">Bike</option>
                             <option value="walk">Walk</option>
@@ -108,10 +108,7 @@
                     </form>
                 </div>
                 <div id="map-container">
-                    <iframe src="https://storage.googleapis.com/maps-solutions-cwmd7xupin/commutes/9mcp/commutes.html"
-                        width="250%" height="100%"
-                        style="border:0;"
-                        loading="lazy">
+                    <iframe src="https://storage.googleapis.com/maps-solutions-cwmd7xupin/commutes/9mcp/commutes.html" width="250%" height="100%" style="border:0;" loading="lazy">
                     </iframe>
                 </div>
                 <div id="trip-suggestions"></div>
@@ -123,7 +120,22 @@
             <div id="user-points">
                 <h3>Your Points: <span>1500</span></h3>
             </div>
-            <div id="rewards-catalog" class="rewards-grid"></div>
+            <div id="rewards-catalog" class="rewards-grid"><div class="reward-item">
+            
+            <h3>Free Bus Pass</h3>
+            <p>500 points</p>
+            <button class="btn btn-secondary">Redeem</button>
+        </div><div class="reward-item">
+           
+            <h3>Bike Discount</h3>
+            <p>1000 points</p>
+            <button class="btn btn-secondary">Redeem</button>
+        </div><div class="reward-item">
+           
+            <h3>Tree Planting</h3>
+            <p>1500 points</p>
+            <button class="btn btn-secondary">Redeem</button>
+        </div></div>
         </section>
 
         <section id="community">
@@ -137,9 +149,10 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Ecocommute. All rights reserved.</p>
+        <p>© 2024 Ecocommute. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
+
 </body>
 </html>
