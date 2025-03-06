@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #4CAF50;
-    --secondary-color: #45a049;
-    --background-color: #f4f4f4;
-    --text-color: #333;
+    --primary-color: #2C3E50;
+    --secondary-color: #18BC9C;
+    --background-color: #ECF0F1;
+    --text-color: #2C3E50;
     --light-text: #fff;
     --card-bg: #fff;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -125,7 +125,7 @@ h1, h2, h3 {
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn-primary {
@@ -139,7 +139,8 @@ h1, h2, h3 {
 }
 
 .btn:hover {
-    opacity: 0.9;
+    background-color: var(--secondary-color);
+    transform: translateY(-3px);
 }
 
 .feature-grid, .dashboard-grid, .rewards-grid {
@@ -210,6 +211,18 @@ footer {
     .burger {
         display: block;
     }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .service-grid, .blog-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .nav-active {
@@ -225,4 +238,58 @@ footer {
         opacity: 1;
         transform: translateX(0px);
     }
+}
+
+/* Add styles for new sections */
+#testimonials, #contact {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    margin-bottom: 4rem;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.testimonial {
+    background-color: var(--background-color);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+}
+
+/* Enhance service card styles */
+.service-card {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Blog post styles */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.blog-post {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
 }

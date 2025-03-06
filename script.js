@@ -100,4 +100,28 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
+
+    // Enhance interactivity for blog posts
+    const blogPosts = document.querySelectorAll('.blog-post');
+    blogPosts.forEach(post => {
+        post.addEventListener('click', () => {
+            alert('Read more about this topic!');
+        });
+    });
+
+    // Add smooth transition for contact form submission
+    const contactForm = document.getElementById('contact-form');
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const name = contactForm.querySelector('input[type="text"]').value;
+        const email = contactForm.querySelector('input[type="email"]').value;
+        const message = contactForm.querySelector('textarea').value;
+
+        // Simulate form submission
+        console.log('Contact Form Submitted:', { name, email, message });
+        alert('Thank you for your message, ' + name + '! We will get back to you soon.');
+
+        // Clear form fields
+        contactForm.reset();
+    });
 });
